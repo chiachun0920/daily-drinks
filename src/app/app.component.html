@@ -12,4 +12,21 @@
     ></app-order-list>
   </div>
 </div>
+<div class="modal" [style.display]="isShowModal ? 'block' : 'none'">
+  <div class="modal-content">
+    <div class="header">冰量</div>
+    <form action="">
+      <input type="radio" name="ice" value="正常冰" [(ngModel)]="ice">正常冰
+      <input type="radio" name="ice" value="少冰" [(ngModel)]="ice">少冰
+      <input type="radio" name="ice" value="去冰" [(ngModel)]="ice">去冰
+    </form>
+    <div class="header">甜度 </div>
+    <form action="">
+      <input type="radio" name="ice" value="正常糖" [(ngModel)]="sugar">正常糖
+      <input type="radio" name="ice" value="少糖" [(ngModel)]="sugar">少糖
+      <input type="radio" name="ice" value="無糖" [(ngModel)]="sugar">無糖
+    </form>
+    <button (click)="closeModal(0)">add</button>
+  </div>
+</div>
 <router-outlet></router-outlet>
