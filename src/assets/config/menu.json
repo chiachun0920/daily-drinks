@@ -1,0 +1,88 @@
+{
+  "menu": [
+    {
+      "category": "鮮萃茶",
+      "menuItems": [
+        {
+          "name": "四季春",
+          "price": 40
+        },
+        {
+          "name": "金萱",
+          "price": 40
+        },
+        {
+          "name": "阿里山烏龍",
+          "price": 40
+        },
+        {
+          "name": "白毫茉莉",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "category": "鮮萃茶拿鐵",
+      "menuItems": [
+        {
+          "name": "紅茶拿鐵",
+          "price": 60
+        },
+        {
+          "name": "烏龍拿鐵",
+          "price": 60
+        },
+        {
+          "name": "觀音拿鐵",
+          "price": 60
+        },
+        {
+          "name": "四季春拿鐵",
+          "price": 60
+        }
+      ]
+    },
+    {
+      "category": "咖啡",
+      "menuItems": [
+        {
+          "name": "招牌黑咖啡",
+          "price": 50
+        },
+        {
+          "name": "莊園級咖啡",
+          "price": 70
+        },
+        {
+          "name": " 重烘培拿鐵",
+          "price": 60
+        },
+        {
+          "name": " 莊園級拿鐵",
+          "price": 75
+        }
+      ]
+    },
+    {
+      "category": "果茶",
+      "menuItems": [
+        {
+          "name": "蜂蜜檸檬",
+          "price": 30
+        },
+        {
+          "name": "蜂蜜蘆薈",
+          "price":30
+        },
+        {
+          "name": " 百香果綠茶",
+          "price": 40
+        },
+        {
+          "name": " 鳳梨冰茶",
+          "price":  40
+        }
+      ]
+    }
+  ]
+}

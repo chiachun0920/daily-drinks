@@ -1,0 +1,11 @@
+<div class="root">
+  <div class="category">{{subMenu.category}}</div>
+  <div class="divider"></div>
+  <div class="menu-items">
+    <app-menu-item *ngFor="let menuItem of menuItems"
+      [name]="menuItem.name"
+      [price]="menuItem.price"
+      (add)="add.emit($event)"
+    ></app-menu-item>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="root">
+  <app-sub-menu *ngFor="let subMenu of menu"
+    [subMenu]="subMenu"
+    (add)="add.emit($event)"
+  ></app-sub-menu>
+</div>

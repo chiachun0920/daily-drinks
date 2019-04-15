@@ -1,0 +1,25 @@
+.root {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  flex-direction: column;
+  .category {
+    color: rgb(86, 93, 98);
+    font-size: 20px;
+  }
+  .divider {
+    margin: 8px 0;
+    border-top: 1px solid rgb(235, 235, 235);
+    height: 1px;
+  }
+  .menu-items {
+    display: flex;
+    flex-direction: row;
+    > * {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+}
