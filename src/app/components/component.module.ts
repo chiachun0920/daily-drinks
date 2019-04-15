@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header';
 import { MenuComponent } from './menu';
 import { MenuItemComponent } from './menu-item';
+import { OrderComponent } from './order';
+import { OrderListComponent } from './order-list';
 import { SubMenuComponent } from './sub-menu';
 
 
@@ -12,6 +14,8 @@ import { SubMenuComponent } from './sub-menu';
     HeaderComponent,
     MenuComponent,
     MenuItemComponent,
+    OrderComponent,
+    OrderListComponent,
     SubMenuComponent
   ],
   imports: [ CommonModule ],
@@ -19,6 +23,8 @@ import { SubMenuComponent } from './sub-menu';
     HeaderComponent,
     MenuComponent,
     MenuItemComponent,
+    OrderComponent,
+    OrderListComponent,
     SubMenuComponent
   ],
   providers: [],

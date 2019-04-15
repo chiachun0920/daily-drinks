@@ -11,6 +11,7 @@ import { AppService } from './app.service';
 export class AppComponent implements OnInit {
 
   menu: Menu;
+  orders: any[] = [];
 
   constructor(private app: AppService) {}
 
@@ -25,6 +26,10 @@ export class AppComponent implements OnInit {
   }
 
   onAdd(event) {
-    console.log(event);
+    this.orders.push({ ...event });
+  }
+
+  onDelete(index) {
+    this.orders = this.orders.filter((order, i) => i !== index);
   }
 }

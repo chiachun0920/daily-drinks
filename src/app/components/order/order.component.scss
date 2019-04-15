@@ -1,0 +1,29 @@
+.root {
+  padding: 8px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .del-ico {
+      color: red;
+    }
+    .exp-ico {
+      margin-left: auto;
+    }
+    .name, .price {
+      color: rgb(54, 70, 81);
+      font-weight: 600;
+    }
+    > * {
+      &:not(:last-child) {
+        margin-right: 4px;
+      }
+    }
+  }
+  .notes {
+    padding-left: 16px;
+  }
+}

@@ -1,0 +1,14 @@
+<div class="root">
+  <div class="item">
+    <i class="fa fa-minus-square-o del-ico" (click)="delete.emit()"></i>
+    <span class="name">{{name}}</span>
+    <span class="price">{{price}}</span>
+    <span class="exp-ico" (click)="isExpand = !isExpand">
+      <i class="fa fa-angle-down" *ngIf="!isExpand"></i>
+      <i class="fa fa-angle-up" *ngIf="isExpand"></i>
+    </span>
+  </div>
+  <div class="notes" *ngIf="isExpand">
+    <div class="note" *ngFor="let note of notes">- {{note}}</div>
+  </div>
+</div>

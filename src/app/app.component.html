@@ -1,10 +1,15 @@
-<div style="display: flex; flex-direction: column">
+<div style="display: flex; flex-direction: column; height: 100%;">
   <app-header></app-header>
-  <div class="display: flex; flex-direction: row">
+  <div style="display: flex; flex-direction: row; height: 100%">
     <app-menu
+      style="flex: 1"
       [menu]="menu"
       (add)="onAdd($event)"
     ></app-menu>
+    <app-order-list 
+      [orders]="orders"
+      (delete)="onDelete($event)"
+    ></app-order-list>
   </div>
 </div>
 <router-outlet></router-outlet>

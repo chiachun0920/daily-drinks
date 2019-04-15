@@ -1,0 +1,14 @@
+<div class="root" style="display: flex;flex-direction: column">
+  <div class="title">Orders</div>
+  <div class="orders" style="display: flex; flex-direction: column">
+    <app-order *ngFor="let order of orders; let i=index"
+      (delete)="delete.emit(i)"
+      [name]="order.name"
+      [price]="order.price"
+    ></app-order>
+  </div>
+  <div class="total">
+    <span class="label">TOTAL</span>
+    <span class="value">{{total}}</span>
+  </div>
+</div>
