@@ -12,3 +12,6 @@ Provide a web interface to order daily drinks and this project is built from ang
 ## Notice 
 - The menu is read from 'assets/config/menu.json'.
 - No RWD is provided now.
+
+## Repository
+[github.com/chiachun0920/daily-drinks](https://github.com/chiachun0920/daily-drinks)
